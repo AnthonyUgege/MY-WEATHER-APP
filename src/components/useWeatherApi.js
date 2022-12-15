@@ -11,7 +11,7 @@ const useWeatherApi = () => {
 
   useEffect(() => {
     setRememberedCity(city);
-  }, [city]);
+  }, [city, setRememberedCity]);
 
   useEffect(() => {
     async function getWeather() {
