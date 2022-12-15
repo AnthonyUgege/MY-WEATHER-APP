@@ -16,7 +16,7 @@ const useWeatherApi = () => {
   useEffect(() => {
     async function getWeather() {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${weatherKey}&q=${city}&aqi=yes`
+        `https://api.weatherapi.com/v1/current.json?key=${weatherKey}&q=${city}&aqi=yes`
       );
 
       const responseData = await response.json();
