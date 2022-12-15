@@ -5,7 +5,7 @@ const WeatherData = ({ weather }) => {
       <h3 className="text-dark" id="w-desc">
         {weather.current.condition.text}
       </h3>
-      <h3 id="w-string">{weather.current.temp_c} °C</h3>
+      <h3 id="w-string">{Math.round(weather.current.temp_c)} °C</h3>
       <img
         id="w-icon"
         src={weather.current.condition.icon}
